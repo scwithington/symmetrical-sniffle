@@ -33,7 +33,9 @@ const queries = [
     name: 'license',
     message: 'Choose a license or leave blank.',
     choices: [
-        ''
+        'Apache 2.0',
+        'Eclipse',
+        
     ]
   },
   {
@@ -59,7 +61,6 @@ function writeFile() {
     .then((userResponse) => {
         fs.writeFileSync('ReadMe.md', userResponse, data);
     })
-
 }
 
 writeFile();
