@@ -30,13 +30,18 @@ const queries = [
     message: 'Please enter usage instructions.'
   },
   {
-    type: 'list',
+    type: 'list', 
     name: 'license',
     message: 'Choose a license or leave blank.',
     choices: [
       'Apache 2.0',
       'Eclipse',
-        
+      'IBM',
+      'MIT',
+      'Mozilla',
+      'BSD 3-Clause',
+      'Unlicense',
+      'None'
     ]
   },
   {
