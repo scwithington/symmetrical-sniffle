@@ -1,5 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+// const index = require('../index')
+
 function renderLicenseBadge(userResponse) {
   if (userResponse.license === 'Apache 2.0') {
     return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
@@ -19,9 +21,8 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-renderLicenseBadge();
 
-function generateMarkdown(queries) {
+function generateMarkdown(userResponse) {
   return `
   
 # ${userResponse.title}
@@ -59,7 +60,7 @@ ${userResponse.contributing}
 ${userResponse.tests}
 
 ## Questions
-Feel free to email ${userResponse.author} at ${userResponse.questions} with any questions.
+Feel free to email ${userResponse.name} at ${userResponse.questions} with any questions.
 
   `;
 }

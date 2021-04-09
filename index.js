@@ -1,3 +1,4 @@
+// json packages
 const fs = require("fs");
 const inquirer = require("inquirer");
 const markdown = require('./utils/generateMarkdown');
@@ -33,8 +34,8 @@ const queries = [
     name: 'license',
     message: 'Choose a license or leave blank.',
     choices: [
-        'Apache 2.0',
-        'Eclipse',
+      'Apache 2.0',
+      'Eclipse',
         
     ]
   },
@@ -46,7 +47,7 @@ const queries = [
   {
     type: 'input',
     name: 'tests',
-    message: 'Testing information'
+    message: 'Testing information.'
   },
   {
     type: 'input',
@@ -59,8 +60,14 @@ function writeFile() {
   inquirer
     .prompt(queries)
     .then((userResponse) => {
-        fs.writeFileSync('ReadMe.md', userResponse, data);
+        fs.writeFileSync('ReadMe.md', markdown(userResponse), function(err) {
+          if (err) throw err;
+        });
+    })
+    .catch((err) => {
+      console.log(err);
     })
 }
 
+// initial function call
 writeFile();
