@@ -18,6 +18,39 @@ const queries = [
     name: "description",
     message: "What would you like for your description?",
   },
+  {
+    type: 'input',
+    name: 'installation',
+    message: 'Please enter installation instructions.'
+  },
+  {
+    type: 'input',
+    name: 'usage',
+    message: 'Please enter usage instructions.'
+  },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'Choose a license or leave blank.',
+    choices: [
+        ''
+    ]
+  },
+  {
+    type: 'input',
+    name: 'contributing',
+    message: 'Your GitHub username:'
+  },
+  {
+    type: 'input',
+    name: 'tests',
+    message: 'Testing information'
+  },
+  {
+    type: 'input',
+    name: 'questions',
+    message: 'Submit your email for user questions.'
+  },
 ];
 
 function writeFile() {
