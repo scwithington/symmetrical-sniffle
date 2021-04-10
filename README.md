@@ -1,12 +1,11 @@
-
-  
-# Cal
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  
+# ReadMe Generator
 ## Description
-CAl
+This is my ReadMe generator. This helps to save the user time and generate a professional-quality ReadMe.
 
--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+### Video
+Here is my video: https://drive.google.com/file/d/1bbsedvDcNGKxpT9A15tLiI10-fRJ3Bzx/view
+
+- - - - - - - - - - - - - - - - - -
 
 ## Table of Contents
 - [Installation](#installation)
@@ -16,25 +15,27 @@ CAl
 - [Tests](#tests)
 - [Questions](#questions)
 
--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+- - - - - - - - - - - - - - - - - -
 
 ## Installation
-Cal
+Ensure that you have node.js installed on your device. Run npm i to install json files.
 
 ## Usage
-cal
+To generate a readme, type node index.js in the terminal and submit answers to each question.
 
 ## License 
-Apache 2.0
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+None
 
 ## Contributing
-cAL
+Github: scwithington
 
 ## Tests
-Cal
+
 
 ## Questions
-Feel free to email Cal at caL with any questions.
+Feel free to email me at with any questions.
+
+Author: Cal Withington
+Email: scwithington@gmail.com
 
   

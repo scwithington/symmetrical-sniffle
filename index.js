@@ -52,7 +52,7 @@ const queries = [
   {
     type: 'input',
     name: 'tests',
-    message: 'Testing information.'
+    message: 'Testing information:'
   },
   {
     type: 'input',
